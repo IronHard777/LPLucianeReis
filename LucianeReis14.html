@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luciane Reis | Psicóloga</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    /* Paleta de Cores */
+    :root {
+      --cor-fundo: #F2E5D5; 
+      --cor-texto-principal: #6A7562;
+      --cor-secundaria: #AFB796;
+      --cor-destaque: #DAB79F;
+      --cor-branco: #FFFFFF;
+    }
+    .font-serif { font-family: 'DM Serif Display', serif; }
+    .font-open-sans { font-family: 'Open Sans', sans-serif; }
+    .font-escrita-mao { font-family: 'Dancing Script', cursive; }
+    
+    /* Estilo para a curva do cabeçalho */
+    .header-curvado {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 95%, 50% 100%, 25% 95%, 0 85%);
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: 768px) {
+      .header-curvado {
+        padding-bottom: 70px;
+      }
+    }
+
+    /* Estilos personalizados para o carrossel Swiper */
+    .swiper-button-next, .swiper-button-prev {
+        color: var(--cor-texto-principal);
+    }
+    .swiper-pagination-bullet-active {
+        background-color: var(--cor-texto-principal);
+    }
+
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade-down {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slide-in-left {
+      0% { opacity: 0; transform: translateX(-40px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes slide-in-right {
+      0% { opacity: 0; transform: translateX(40px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease both;
+    }
+    .animate-fade-down {
+      animation: fade-down 1s ease both;
+    }
+    .animate-slide-in-left {
+      animation: slide-in-left 1s ease both;
+    }
+    .animate-slide-in-right {
+      animation: slide-in-right 1s ease both;
+    }
+  </style>
+</head>
+<body class="font-open-sans" style="background-color: var(--cor-fundo); color: var(--cor-texto-principal);">
+
+<!-- Header -->
+<header class="header-curvado flex items-center justify-start py-4 px-6 md:px-10 transition-all duration-700 ease-in-out scroll-reveal" style="background-color: var(--cor-secundaria);">
+  <div class="flex items-center">
+    <img src="https://raw.githubusercontent.com/IronHard777/LPLucianeReis/main/NovaLogo3.png" alt="Logo Luciane Reis Psicóloga" class="h-24 md:h-32 w-auto transition-transform duration-700 ease-in-out hover:scale-105 scroll-reveal" onerror="this.onerror=null;this.src='https://placehold.co/128x128/AFB796/6A7562?text=Logo';" />
+    <div class="border-l-2 h-16 md:h-20 mx-4 md:mx-6 transition-all duration-700 ease-in-out scroll-reveal" style="border-color: var(--cor-texto-principal);"></div>
+    <div>
+      <h1 class="font-escrita-mao text-4xl md:text-5xl scroll-reveal" style="color: var(--cor-texto-principal);">Luciane Reis</h1>
+      <p class="font-escrita-mao text-lg scroll-reveal" style="color: var(--cor-texto-principal);">CRP 08/08765</p>
+    </div>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="text-center py-20 px-4 transition-all duration-700 ease-in-out scroll-reveal" style="background-color: var(--cor-destaque); color: var(--cor-texto-principal);">
+  <h1 class="font-serif text-4xl lg:text-5xl mb-4 scroll-reveal">Bem-vindo ao seu espaço de cuidado emocional</h1>
+  <p class="text-lg max-w-lg mx-auto scroll-reveal">Descubra um espaço acolhedor onde você pode se conhecer, se fortalecer e encontrar equilíbrio.</p>
+  <a href="https://wa.me/554199338494" target="_blank" class="inline-flex items-center mt-8 py-3 px-6 rounded-full font-semibold transition shadow-md hover:shadow-lg hover:scale-105 scroll-reveal" style="background-color: var(--cor-texto-principal); color: var(--cor-destaque);">
+    <i class="fab fa-whatsapp text-2xl mr-3"></i>
+    Entre em contato
+  </a>
+</section>
+
+<!-- Seção de Relacionamentos -->
+<section class="py-16 px-4 transition-all duration-700 ease-in-out scroll-reveal">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+    <div class="flex justify-center md:justify-start scroll-reveal">
+      <img src="https://raw.githubusercontent.com/IronHard777/LPLucianeReis/main/Familia_Feliz.png" alt="Imagem de família feliz e saudável" class="rounded-3xl shadow-lg w-full h-auto object-cover max-w-md transition-transform duration-700 ease-in-out hover:scale-105 scroll-reveal" onerror="this.onerror=null;this.src='https://placehold.co/600x450/DAB79F/FFFFFF?text=Erro+ao+carregar';">
+    </div>
+    <div class="text-center md:text-left scroll-reveal">
+      <h2 class="font-serif text-2xl lg:text-3xl mb-4 scroll-reveal" style="color: var(--cor-texto-principal);">Relacionamentos saudáveis começam dentro de você</h2>
+      <p class="mb-4 text-base lg:text-lg scroll-reveal">Reconhecer suas emoções, entender padrões e fortalecer sua autoestima são passos fundamentais para ter vínculos mais leves, verdadeiros e equilibrados.</p>
+      <p class="text-base lg:text-lg scroll-reveal">A terapia é um espaço seguro para reconstruir esses vínculos e fortalecer sua autoestima.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Quem sou eu -->
+<section class="py-16 px-4 transition-all duration-700 ease-in-out scroll-reveal" style="background-color: var(--cor-secundaria);">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center">
+    <div class="md:col-span-2 flex justify-center scroll-reveal">
+      <img src="https://raw.githubusercontent.com/IronHard777/LPLucianeReis/main/LucianaReisPerfil.jpeg" alt="Foto de Luciane Reis" class="rounded-3xl shadow-lg w-full h-auto object-cover transition-transform duration-700 ease-in-out hover:scale-105 scroll-reveal" onerror="this.onerror=null;this.src='https://placehold.co/400x500/AFB796/FFFFFF?text=Luciane+Reis';">
+    </div>
+    <div class="md:col-span-3 text-center md:text-left scroll-reveal">
+      <h2 class="font-serif text-3xl mb-6 scroll-reveal" style="color: var(--cor-texto-principal);">Quem sou eu</h2>
+      <p class="mb-4 scroll-reveal">Sou psicóloga (CRP 08/08765) com 25 anos de formação, apaixonada por entender as complexidades da mente humana e ajudar pessoas a encontrarem versões mais saudáveis e felizes de si mesmas.</p>
+      <p class="scroll-reveal">Atendo adolescentes a partir de 13 anos e adultos, tentantes, gestantes e puérperas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Como posso te ajudar -->
+<section id="services" class="py-16 px-4 transition-all duration-700 ease-in-out scroll-reveal" style="background-color: var(--cor-fundo);">
+  <h2 class="font-serif text-3xl mb-10 text-center scroll-reveal" style="color: var(--cor-texto-principal);">Como posso te ajudar?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-frown-open text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Lidar com Ansiedade e Estresse</h3><p>Desenvolva ferramentas eficazes para gerenciar a ansiedade e o estresse.</p></div>
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-heart text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Melhorar Relacionamentos</h3><p>Aprimore a comunicação e construa laços mais saudáveis e significativos.</p></div>
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-smile text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Fortalecer Autoestima</h3><p>Reconstrua sua autoconfiança, descubra seu valor e aprenda a se aceitar.</p></div>
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-cloud-sun text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Superar Desafios e Perdas</h3><p>Encontre apoio para atravessar momentos difíceis como luto e transições.</p></div>
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-lightbulb text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Promover Autoconhecimento</h3><p>Inicie uma jornada para compreender suas motivações, medos e desejos.</p></div>
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-balance-scale text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Desenvolver Equilíbrio Emocional</h3><p>Aprenda a identificar e regular suas emoções para maior bem-estar.</p></div>
+    <div class="rounded-3xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-500 scroll-reveal" style="background-color: var(--cor-branco);"><i class="fas fa-baby text-5xl mb-6" style="color: var(--cor-texto-principal);"></i><h3 class="text-xl font-semibold mb-2">Atravessar a Maternidade com Equilíbrio</h3><p>Fortaleça sua saúde emocional durante a gravidez, parto e puerpério.</p></div>
+  </div>
+</section>
+
+<!-- Seção de Depoimentos em Carrossel -->
+<section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="font-serif text-3xl mb-12 text-center" style="color: var(--cor-texto-principal);">O que dizem os pacientes</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+            <!-- Carrossel -->
+            <div class="lg:col-span-2">
+                <!-- Estrutura do Swiper -->
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"A terapia com a Luciane foi um divisor de águas na minha vida. Aprendi a me olhar com mais gentileza e a lidar melhor com minhas emoções."</p>
+                        <span class="font-semibold not-italic self-end">— M., 34 anos</span>
+                      </blockquote>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"A Lu me acompanha há muitos anos, me ajudou a desenvolver minha própria autonomia e questões muito profundas em relações familiares. Hoje já consigo me relacionar muito melhor no âmbito de amizades, amorosamente e principalmente, em relação a mim mesma."</p>
+                        <span class="font-semibold not-italic self-end">— M.A 24 anos</span>
+                      </blockquote>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Excelente profissional. Me ajudou e me atendeu em todos os momentos que precisei, mesmo fora de horário de consultas. Muito mais que profissional ela é muito humana. Super recomendo."</p>
+                        <span class="font-semibold not-italic self-end">— K.K 36 anos</span>
+                      </blockquote>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Excelente profissional, me ajudou muito a compreender e a lidar com minhas dificuldades de saúde, recomendo a todos."</p>
+                        <span class="font-semibold not-italic self-end">— L. C 40 anos</span>
+                      </blockquote>
+                    </div>
+                     <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Quero deixar aqui registrado meu depoimento... procurei pela psicóloga Luciane e fui prontamente atendida com amor e carinho... Sempre que alguém me pede o contato de uma psicóloga, eu prontamente indico ela."</p>
+                        <span class="font-semibold not-italic self-end">— M. 67 anos</span>
+                      </blockquote>
+                    </div>
+                     <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Um espaço de acolhimento e segurança. Me senti compreendido desde a primeira sessão."</p>
+                        <span class="font-semibold not-italic self-end">— R., 28 anos</span>
+                      </blockquote>
+                    </div>
+                     <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Psico Lu é maravilhosa, me ajudou em varios aspectos da vida, amadurecimento pessoal e emocional e crescimento profissional. E agora está acompanhando toda a minha gestação e pos parto. Recomendo o trabalho dela de olhos fechados"</p>
+                        <span class="font-semibold not-italic self-end">— K.G 32 anos</span>
+                      </blockquote>
+                    </div>
+                     <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Excelente profissional! Muito atenciosa e dedicada com seus pacientes."</p>
+                        <span class="font-semibold not-italic self-end">— N. B 26 anos</span>
+                      </blockquote>
+                    </div>
+                     <!-- Slide 9 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Demonstra a sensibilidade e competência que, em minha opinião, a torna uma das melhores profissionais em sua área"</p>
+                        <span class="font-semibold not-italic self-end">— E, S 55 anos</span>
+                      </blockquote>
+                    </div>
+                     <!-- Slide 10 -->
+                    <div class="swiper-slide">
+                      <blockquote class="border-l-4 p-6 h-full flex flex-col justify-center" style="border-color: var(--cor-secundaria); background-color: rgba(255,255,255,0.3); border-radius: 0 8px 8px 0;">
+                        <p class="italic mb-4">"Tem me ajudado muito mais....faz uns 2meses mais ou menos, e tenho refletido a cada sessão. Colocando em prática as conversas, faz eu ter uma visão mais ampla das minhas dificuldades."</p>
+                        <span class="font-semibold not-italic self-end">— C. F 22 anos</span>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <!-- Paginação -->
+                  <div class="swiper-pagination mt-8 relative"></div>
+                
+                  <!-- Botões de Navegação -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- Imagem -->
+            <div class="lg:col-span-1 flex-col justify-center items-center hidden lg:flex">
+                <img src="https://raw.githubusercontent.com/IronHard777/LPLucianeReis/main/ImagemIA3.png" alt="Imagem de um ambiente acolhedor" class="rounded-3xl shadow-lg w-full max-w-sm h-auto object-cover sticky top-8">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section class="py-16 px-4 text-center" style="background-color: var(--cor-destaque);">
+  <div class="flex justify-center items-center mb-4">
+    <i class="fas fa-phone text-2xl mr-2" style="color: var(--cor-texto-principal);"></i>
+    <h2 class="font-serif text-3xl" style="color: var(--cor-texto-principal);">Entre em contato</h2>
+  </div>
+  <p class="mb-6">Agende sua sessão ou tire suas dúvidas.</p>
+  <a href="https://wa.me/554199338494" target="_blank" class="inline-flex items-center mt-8 py-3 px-6 rounded-full font-semibold transition shadow-md hover:shadow-lg hover:scale-105 scroll-reveal" style="background-color: var(--cor-texto-principal); color: var(--cor-destaque);">
+  <i class="fab fa-whatsapp text-2xl mr-3"></i>
+  Entre em contato
+</a>
+  <p class="mt-6"><i class="fas fa-id-badge text-2xl mr-2 align-middle"></i>CRP 08/08765</p>
+</section>
+
+<!-- Rodapé -->
+<footer class="text-center py-8" style="background-color: var(--cor-secundaria); color: var(--cor-texto-principal);">
+  <div class="flex justify-center items-center space-x-6">
+    <a href="https://www.facebook.com/luciane.mk" target="_blank" class="inline-flex items-center hover:underline">
+      <i class="fab fa-facebook text-xl mr-1"></i>Facebook
+    </a>
+    <a href="https://www.instagram.com/luciane_reis_/" target="_blank" class="inline-flex items-center hover:underline">
+      <i class="fab fa-instagram text-xl mr-1"></i>Instagram
+    </a>
+  </div>
+</footer>
+
+<!-- Swiper.js JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Script de inicialização do Swiper -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Parâmetros de configuração
+    loop: true,
+    autoplay: {
+      delay: 5000, // Tempo de transição ajustado para 5 segundos
+      disableOnInteraction: true,
+    },
+    
+    // Paginação (bolinhas)
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Botões de navegação (setas)
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Slides visíveis por breakpoint (responsividade)
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      // quando a largura da tela for >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      }
+    }
+  });
+</script>
+
+<script>
+// Scroll Reveal Animation
+function revealOnScroll() {
+  const reveals = document.querySelectorAll('.scroll-reveal');
+  const windowHeight = window.innerHeight;
+  for (let i = 0; i < reveals.length; i++) {
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    if (elementTop < windowHeight - 60) {
+      reveals[i].classList.add('animate-fade-in');
+    } else {
+      reveals[i].classList.remove('animate-fade-in');
+    }
+  }
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('DOMContentLoaded', revealOnScroll);
+</script>
+
+</body>
+</html>
